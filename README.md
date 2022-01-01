@@ -1,2 +1,2 @@
-# learn-java-curency
-main java currency management frameworks
+# Learn java currency frameworks
+Main java currency management frameworks
