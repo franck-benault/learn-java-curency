@@ -58,12 +58,6 @@
 				<artifactId>slf4j-api</artifactId>
 				<version>${slf4j.version}</version>
 			</dependency>
-
-			<dependency>
-				<groupId>org.apache.logging.log4j</groupId>
-				<artifactId>log4j-slf4j-impl</artifactId>
-				<version>${log4j2.version}</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -80,5 +74,7 @@
 		</plugins>
 	</build>
 	<modules>
+	<module>L01-javaUtilCurrency</module>
+	<module>L02-moneta</module>
 	</modules>
 </project>
