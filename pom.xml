@@ -76,5 +76,6 @@
 	<modules>
 	<module>L01-javaUtilCurrency</module>
 	<module>L02-moneta</module>
+	<module>L03-Joda-Money</module>
 	</modules>
 </project>
