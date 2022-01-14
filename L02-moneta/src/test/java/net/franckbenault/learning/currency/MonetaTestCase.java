@@ -1,11 +1,9 @@
 package net.franckbenault.learning.currency;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import javax.money.CurrencyQuery;
 import javax.money.CurrencyQueryBuilder;
 import javax.money.CurrencyUnit;
 import javax.money.Monetary;
@@ -85,6 +83,15 @@ public class MonetaTestCase {
 
 	    assertTrue(oneEuro.equals(Money.of(1, "EUR")));
 	    assertTrue(oneDolar.equals(Money.of(1, "USD")));
+	}
+	
+	@Test
+	public void testAmountDivide() {
+	    MonetaryAmount threeDollar = Monetary.getDefaultAmountFactory()
+	      .setCurrency("USD").setNumber(3).create();
+	    MonetaryAmount oneDollar = threeDollar.divide(3);
+	    System.out.println(oneDollar);
+	    assertEquals(oneDollar, Money.of(1, "USD"));
 	}
 
 }
